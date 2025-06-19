@@ -7,6 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Background Image"
+        app:srcCompat="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <EditText
         android:id="@+id/SongTitleEdtTxt"
         android:layout_width="286dp"
@@ -17,6 +29,7 @@
         android:ems="10"
         android:hint="Please Enter a Song Title"
         android:inputType="text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,6 +44,7 @@
         android:ems="10"
         android:hint="Please Enter An Artist Name"
         android:inputType="text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/SongTitleEdtTxt" />
@@ -45,6 +59,7 @@
         android:ems="10"
         android:hint="Please Rate this (1-5)"
         android:inputType="text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ArtistNameEdtTxt" />
@@ -53,14 +68,15 @@
         android:id="@+id/CommentEdtTxt"
         android:layout_width="286dp"
         android:layout_height="44dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="63dp"
         android:ems="10"
         android:hint="You can leave a Comment here "
         android:inputType="text"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/RateEdtTxt" />
 
@@ -72,6 +88,7 @@
         android:layout_marginTop="69dp"
         android:layout_marginEnd="100dp"
         android:text="Add to my Playlist"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CommentEdtTxt" />
@@ -84,6 +101,7 @@
         android:layout_marginTop="29dp"
         android:layout_marginEnd="100dp"
         android:text="Exit"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/viewPlaylistButton" />
@@ -96,9 +114,12 @@
         android:layout_marginTop="19dp"
         android:layout_marginEnd="100dp"
         android:text="View Playlist"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addToPlaylist" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
