@@ -17,7 +17,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="HardcodedText" />
 
     <EditText
         android:id="@+id/SongTitleEdtTxt"
@@ -32,7 +33,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/ArtistNameEdtTxt"
@@ -47,7 +49,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/SongTitleEdtTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/SongTitleEdtTxt"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/RateEdtTxt"
@@ -62,7 +65,8 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ArtistNameEdtTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/ArtistNameEdtTxt"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
 
     <EditText
         android:id="@+id/CommentEdtTxt"
@@ -78,7 +82,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RateEdtTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/RateEdtTxt"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/addToPlaylist"
@@ -91,7 +96,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/CommentEdtTxt" />
+        app:layout_constraintTop_toBottomOf="@+id/CommentEdtTxt"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/exitButton"
@@ -104,7 +110,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPlaylistButton" />
+        app:layout_constraintTop_toBottomOf="@+id/viewPlaylistButton"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/viewPlaylistButton"
@@ -117,7 +124,8 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addToPlaylist" />
+        app:layout_constraintTop_toBottomOf="@+id/addToPlaylist"
+        tools:ignore="HardcodedText" />
 
 
 
